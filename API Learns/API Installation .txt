@@ -1,0 +1,42 @@
+API Installation 
+
+Using CMD
+1. Copy Paste this : 
+powershell.exe -NoProfile -InputFormat None -ExecutionPolicy AllSigned -Command 
+"[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient)
+.DownloadString('https://dl-cli.pstmn.io/install/win64.ps1'))"    
+
+2. Check Node is installed or not :
+node -v 
+
+3. check Node package manager is there or not :
+npm -v
+
+4. To install Newmen :
+Command: $ npm install -g newman
+
+Why we have to install node.js ? This question may come into your mind  ?
+Because Newman is node.js program and to get newman we have to first install node.js
+
+-----  Run npm install -g npm@10.2.5 to update!   <-----To install Latest version only need to change the version number.
+
+Found Error -->
+C:\Users\Karan>npm install -g npm@10.2.5
+npm ERR! code EBADENGINE
+npm ERR! engine Unsupported engine
+npm ERR! engine Not compatible with your version of node/npm: npm@10.2.5
+npm ERR! notsup Not compatible with your version of node/npm: npm@10.2.5
+npm ERR! notsup Required: {"node":"^18.17.0 || >=20.5.0"}
+npm ERR! notsup Actual:   {"npm":"9.5.1","node":"v18.16.0"}
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Karan\AppData\Local\npm-cache\_logs\2024-01-02T12_11_46_116Z-debug-0.log
+
+---->
+Solution :
+Install Latest Node : I install 20.5.0 Version From Chrome manually and then execute the same it runs.
+
+
+5. 
+
+
