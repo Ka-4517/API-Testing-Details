@@ -1,0 +1,110 @@
+RealTime API Testing Interview Question - 16 Jan 2024
+
+Introduce Your Self ?  <----- Must Be fluent 
+1.Name 
+2.From 
+3.Current Location 
+4.Currently Working Company 
+5.Designation / QA Manual & API Tester 
+6.Current Project Details
+7.Agile Process Follow / Explain 
+8.Explain Testing Process 
+
+
+What is API ?
+Application programming interface is the mechanism thruogh which two module/application communicate together.
+which is a collection of communication protocols and subroutines used by various programs to communicate between them.
+
+
+What is the meaning of 401 In API ?
+401 Unauthorized --> 
+
+-----------------------------------------------------------
+1xx: Informational
+2xx: Success : 200 OK , 201 Created , 202 Accepted , 203 Non-Authoritative Information , 204 No Content , 
+3xx: Redirection : 300 Multiple Choices , 
+4xx: Client Errors : 400 Bad Request , 401 Unauthorized , 402 Payment Required , 403 Forbidden , 404 Not Found
+5xx: Server Errors : 500 Internal Server Error , 501 Not Implemented , 502 Bad Gateway , 503 Service Unavailable , 504 Gateway Timeout , 
+
+100 Continue
+An interim response. Indicates to the client that the initial part of the request has been received and has not yet been rejected by the server. 
+The client SHOULD continue by sending the remainder of the request or, if the request has already been completed, ignore this response. 
+The server MUST send a final response after the request has been completed.
+
+101 Switching Protocol
+Sent in response to an Upgrade request header from the client, and indicates the protocol the server is switching to.
+
+102 Processing (WebDAV)
+Indicates that the server has received and is processing the request, but no response is available yet.
+
+200 OK
+The 200 OK code is the most common API status code. It indicates that the request was successful, and the response contains the requested data. 
+For example, if a client requests information about a user, and the server successfully returns that information, it will return a 200 OK code.
+
+201 Created: The request was successful, and a new resource has been created.
+204 No Content: The request was successful, but there is no data to return.
+
+400 Bad Request
+The 400 Bad Request code is returned when the client sends a request that is malformed or invalid. This could be because of missing or incorrect parameters, or other issues with the request. 
+For example, if a client sends a request to create a new user but does not include a required field like an email address, the server will return a 400 Bad Request code.
+
+401 Unauthorized
+The 401 Unauthorized code is returned when the client attempts to access a protected resource without providing valid authentication credentials. 
+For example, if a client attempts to access a user's account information without providing a valid username and password, the server will return a 401 Unauthorized code.
+
+403 Forbidden
+The 403 Forbidden code is returned when the client does not have permission to access the requested resource. This could be because the client is not authorized to access the resource, 
+or because the resource does not exist. 
+For example, if a client attempts to access a resource that is only available to administrators, the server will return a 403 Forbidden code.
+
+-------------------------------------------------------------
+What is Hot Fix ?                                                                                     <----------------Imp
+Critical fix/A hotfix is a term coined for a critical fix that must be deployed on production to patch the issue impacting the client business. 
+Generally it comes when any bug leakage found or any major functionality breaking.
+
+What Fatal Defects ?
+Known as Blocker Defects.
+--------------------------------------------------------------
+How you validate The API / How to test the API ?                                                       <-----------------Imp
+Showcase Your Collection 
+Validate status Code 
+Validate / Verify Responses 
+Check Headers 
+Verify the Authorization flow 
+---------------------------------------------------------------
+1.Bearer Tokens ?                                                                                       <------------------Bearer Toekn 
+Bearer tokens are nothing but its a Security Token which allows user to access into the application/ which is generated at the time of login into the application.
+Scenario: Often used in OAuth 2.0 authentication flows, where an access token is obtained after successful authentication.
+
+How this Bearer Token Works ?
+It is Created by the Authentication server (Client Server mechanism).
+It is a pre dominant type of Access Key.
+OAuth 2.0 authentication flows
+And it is saved as Global Variable accross all the API's Endpoint.
+
+-------------------------------------------------------------------------------------------------
+
+What is API Chaining ? What is the significance of API chaining ? Why People Go for Chaining Method ?      <--------------API Chaining 
+The API chaining method is to create a sequence of API calls where the output of one API request is used as the input for the next. 
+The technique is an automated and efficient way of executing a Multistep Process.
+
+There are multiple reasons to do So:-
+1.Dependency on Previous Responses:
+In some scenarios, the output of one API request may be required as input for another. 
+2.End-to-End Testing:
+For end-to-end testing of an application, API chaining allows you to simulate user interactions with
+ the system by stringing together a series of API calls that represent a complete user journey.
+3.Efficiency and Performance Testing:
+Chaining enables the testing of performance and efficiency by analyzing how a system performs under different
+ loads and with various sequences of API calls.
+ 
+ 
+What is Newman In API Testing ?                                                                          <-------------------Newman
+Newman is a command-line interface for running Postman collections. 
+It is a powerful tool that allows you to automate your API testing and integrate it into your continuous integration and deployment pipelines.
+Newman is a CLI (Command-line interface) tool which allows you to run a Postman collection directly from the command line. 
+As we discussed in the above section, continuous integration helps us to combine the different codes and execute tests continuously. 
+This amalgam of tests and code is a success due to continuous integration, which in Postman is done by Newman.
+------------------------------------------------------------------------------------------------------
+
+
