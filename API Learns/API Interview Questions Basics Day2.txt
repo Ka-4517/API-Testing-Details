@@ -1,0 +1,11 @@
+What is cross-site request forgery (CSRF)?
+Cross-site request forgery is an attack that forces user top execute unwanted action in the web application in which they are authorized to perform actions. 
+This attack exploits the trust the web application has in an authenticated user.
+
+How CSRF can be prevented in API testing?
+CSRF tokens: CSRF can be prevented by using CSRF tokens. These are the random tokens that need to be unique per user session and should be of large random value to make it difficult to guess.
+SameSite cookies: SameSite is a browser security mechanism that determines when a website’s cookies are included in the requests originating from other websites.
+Referer-based validation: HTTP referer header can be used to defend against CSRF attacks by verifying the request originated from the application’s own domain.
+
+
+
