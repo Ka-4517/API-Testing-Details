@@ -16,13 +16,13 @@ Faster bug fixes
 Reduced costs: 
 Better test coverage:
 
-What needs to be verified in API testing?
+What needs to be verified in API testing?   <----------------
 API testing helps to verify the correctness of data and responses
 HTTP status codes of the API needs to verified.
 Authorization details.
 API testing should verify the functionality and behavior.
 
-What is Latency in API testing?
+What is Latency in API testing?  <---------------------Latency
 Latency in API testing is how long it takes for the request to reach the server.
 
 What is the role of headers in API testing?
@@ -30,7 +30,7 @@ Headers in API testing plays an important role in providing additional informati
 Herders are important in controlling the behavior of the server in handling the request, to provide authentication information, 
 or to provide metadata about the request or response.
 
-What is the purpose of authentication in API testing?
+What is the purpose of authentication in API testing? <--------------------------Authentication
 API authentication is a combination of technology or process that verifies the identities of users who want access to an API.
 
 What is API versioning, and why is it important in API testing?
@@ -47,16 +47,16 @@ What is the purpose of the request and response body in API testing?
 The request body is used to send and receive data such as input parameters, or data to create/ update resources via the REST API. 
 The response body is the data API send to the client.
 
-What is API mocking?
+What is API mocking?  <------------------------------------Mocking 
 API mocking is practice of simulating the behavior of an API endpoint during testing without actually invoking the real API. 
 It is beneficial during the development stage.
 
-Why API Mocking is used in API Testing?
+Why API Mocking is used in API Testing? <------------------------------Mocking 
 Mock APIs are useful when applications have dependencies with external APIs.
 Mock APIs are useful for testers to plan and validate test executions and for developers to do unit testing and identify the initial development stages.
 Mock APIs are useful in situations where the complete API needs to be made available for consumer testing before committing it to development stage.
 
-What is API security testing, and why is it important?
+What is API security testing, and why is it important? <-----------------------Api Security 
 API security testing is the process of testing the vulnerabilities in the API. 
 This is done through penetration testing or manual scanning of the APIs. API security testing is important:
 ex: Cloud-based applications rely on APIs to exchange data and interact with each other. Any security vulnerabilities can have far-reaching consequences.
@@ -65,7 +65,7 @@ ex: Organizations rely on security solutions that are built for web apps to dete
 Such solutions cannot detect unique vulnerabilities and gaps in the APIs.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-How do you ensure the security of APIs in your tests?
+How do you ensure the security of APIs in your tests? <-----------------Security Check 
 -Use secure communication protocols like HTTPs to encrypt data transmitted between client and server.
 -It is important to properly implement authentication and authorization mechanisms to ensure that only authorized users can access the API endpoints and perform the authorized actions.
 -Ensure that all the input data in the API requests are properly authorized, validated, and sanitized to prevent injection attacks and cross-site scripting attacks.
@@ -113,7 +113,7 @@ Fixed API Pricing Model
 The fixed pricing model is very similar to the subscription model, where API users or developers pay a flat rate to use the API. 
 As they are billed on a monthly or yearly basis, there may or may not be any restrictions on API usage.
 
-Penetration Testing ? (penetration testers or ethical hackers)
+Penetration Testing ? (penetration testers or ethical hackers) <--------------Penetration Testing
 A penetration test (pen test) is an authorized simulated attack performed on a computer system to evaluate its security. Penetration testers use the same tools, techniques, 
 and processes as attackers to find and demonstrate the business impacts of weaknesses in a system. Penetration tests usually simulate a variety of attacks that could threaten a business. 
 They can examine whether a system is robust enough to withstand attacks from authenticated and unauthenticated positions, as well as a range of system roles. With the right scope, a pen test 
