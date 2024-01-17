@@ -7,5 +7,29 @@ CSRF tokens: CSRF can be prevented by using CSRF tokens. These are the random to
 SameSite cookies: SameSite is a browser security mechanism that determines when a website’s cookies are included in the requests originating from other websites.
 Referer-based validation: HTTP referer header can be used to defend against CSRF attacks by verifying the request originated from the application’s own domain.
 
+------------------------------------------------------------
+31. What is API contract testing?
+API contract testing is a type of testing that aims to monitor the API conversation that takes place between the API consumer and the API producer. It can be performed using tools like Postman, Swagger, etc.
+
+32. Why API contract testing important?
+System maintenance and Scaling are difficult when multiple modules are involved.
+The integration testing is slow in development and returning results, especially when communication modules need to be tested.
+Debugging is also a hectic task when multiple modules are involved. It may happen that one is debugging an error due to a module apart from the one that is being tested.
+
+33. When to Do Contract Testing?
+Contract testing is an efficient method but can only be applied when you are working on modules that need to communicate with each other. 
+In our case (and the majority of products), this communication is executed using APIs. 
+-------------------------------------------------------------
+What is Fuzz Testing ?
+Fuzz Testing is a Software Testing technique that uses invalid, unexpected, or random data as input and then checks for exceptions such as crashes and potential memory leaks. 
+It is an automated testing technique that is performed to describe the system testing processes involving randomized or distributed approaches. During fuzz testing, a system or 
+software application can have a lot of different bugs or glitches related to data input.
+
+
+
+
+
+
+
 
 
