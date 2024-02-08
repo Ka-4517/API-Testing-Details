@@ -1,0 +1,24 @@
+
+1->Sending binary data for RESTful APIs
+RESTful APIs are the most widespread API architectural style. When sending binary data through a POST request 
+in a RESTful API using Postman, only a few steps are needed:
+
+Select the HTTP Method: In Postman, select POST as your HTTP method for your request.
+Enter the URL: Input the endpoint URL where you are transmitting data.
+Choose Body tab: Click on the Body tab, and select binary from the dropdown menu.
+Upload the file: Click on the Select File button, and your operating system will prompt you to choose a file.
+Setting headers: You will need to set the Content-Type header when sending binary data, and should match the data type you are transmitting. For example, if you are sending a JPEG image, your Content-Type header should be set to image/jpeg. Postman will attempt to set this header for you, but double-check that it is set correctly. The Content-Length header will be calculated by Postman automatically before you transmit the data.
+Send your request: You can click the Send button, or you use the keyboard shortcut, typically Cmd-Enter on a Mac, or Ctrl-Enter on Windows/Linux systems.
+
+Topics Needs To cover :
+https://blog.postman.com/run-collections-in-postman-vs-code-extension/
+
+https://blog.postman.com/api-design-interview-questions/
+
+https://blog.postman.com/the-ultimate-guide-to-setting-up-team-workspaces/
+
+https://blog.postman.com/testing-apis-in-postman-using-advanced-oauth-flows/
+
+https://blog.postman.com/how-to-review-postman-test-results/
+
+https://www.postman.com/postman/workspace/15-days-of-postman-for-testers/overview
