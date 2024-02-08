@@ -10,6 +10,9 @@ Web Services : It provides support for HTTP protocol.
 XML Support : 
 API : API supports XML and JSON.
 Web Service : Web service supports XML.
+Note:---->>>
+All webservices are API's but API's are not webservices.
+Webservices is a API wrapped in HTTP. 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 What are the advantages of API Testing?
 Faster bug fixes
