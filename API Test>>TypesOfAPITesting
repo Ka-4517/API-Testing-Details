@@ -1,0 +1,60 @@
+API Testing Day 2
+
+What is API testing?
+API testing is a type of software testing that analyzes an application program interface (API) to verify that it 
+fulfills its expected functionality, security, performance and reliability. The tests are performed either directly 
+on the API or as part of integration testing.
+It is one of the most challenging type of Testing , If we miss any certain cases in API Testing , then it will create 
+a big problem in Production ,After full integration it is hard to debug the problem in the Production environment.
+    The It self having the Defination.
+	
+Types of API tests ?
+1. Validation testing
+Validation testing analyzes API projects based on three distinct sets of criteria: the API's usability as a product, 
+its transactional behavior and its operational efficiency. Here are some typical questions asked during validation 
+testing:
+
+-Is the API designed in a way that meets its product goals or solves the problem it's supposed to?
+-Were there any major coding missteps that would push the API in an unsustainable direction?
+-Is the API accessing data in accordance with predefined policies?
+-Is the API storing data in accordance with security or compliance rules?
+-Would any code alterations improve the API's overall functionality?
+
+2. Functional testing
+Functional testing ensures the API performs exactly as it is supposed to. This test analyzes specific functions 
+within the codebase to guarantee the API functions within its expected parameters and can handle errors when the 
+results are outside the designated parameters.
+
+
+3. Load testing
+Load testing is used to see how many calls an API can handle. This test is often performed after a specific unit 
+or codebase is completed to determine whether the theoretical solution can also work as a practical solution when 
+acting under a given load.
+
+4. Reliability testing
+Reliability testing ensures the API can produce consistent results and the connection between platforms is reliable.
+
+5. Security testing
+Security testing attempts to validate the encryption methods the API uses as well as the access control design. 
+It includes the validation of authorization checks for resource access and user rights management.
+
+6. Penetration testing
+Penetration testing builds on security testing. In this type of test, the API is attacked by a person with limited 
+or no knowledge of the software. This enables testers to analyze the attack vector from an outside perspective. 
+The attacks used in penetration testing can be limited to specific elements of the API or can target the API in 
+its entirety.
+
+7. Fuzz testing
+Fuzz testing forcibly inputs huge amounts of random data -- also called noise or fuzz -- into the system, attempting 
+to create negative behavior, such as a forced crash or overflow.
+
+8. Unit testing
+Unit testing is a testing process in which the smallest testable parts of an application, called units, are individually
+ and independently scrutinized for proper operation. The process of unit testing an API includes testing single 
+ endpoints with a single request.
+ 
+9. Integration Testing
+Integration tests are a type of software testing in which the different units, modules or components of an application 
+are tested as a combined entity. Because APIs are used in integrations between two or more pieces of software, an 
+integration test analyzes how the API integrates the software.
+
