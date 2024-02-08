@@ -1,0 +1,166 @@
+API Testing Day 1 
+
+1->What is an API with example?  <----
+APIs are mechanisms that enable two software components to communicate with each other using a set of definitions 
+and protocols. For example, the weather bureau's software system contains daily weather data. 
+The weather app on your phone “talks” to this system via APIs and shows you daily weather updates on your phone.
+
+2->Why is API important?  <---
+The Importance of APIs: Enabling Innovation
+The importance of API lies in the fact that it is the essential building block of contemporary software development 
+because it enables data sharing and communication across various software systems.
+
+3->What is data API?
+The Data API is a REST interface that provides access to data and data management functions. To simultaneously 
+provide robustness, scalability, efficient storage capabilities and flexible query possibilities, the Data API 
+design is based on the principle of separating data (blobs) from metadata (partitions).
+
+4->Why is API called API? API Request /call ?
+Application programming interfaces (APIs) are a way for one program to interact with another. API calls are the 
+medium by which they interact. An API call, or API request, is a message sent to a server asking an API to provide
+ a service or information.
+ 
+5->What does an API gateway do?
+An API gateway is an application programming interface (API) management tool that sits between a client and a 
+collection of backend services.
+An API gateway acts as a reverse proxy to accept all application programming interface (API) calls, aggregate 
+the various services required to fulfill them, and return the appropriate result.
+ 
+6->An API gateway’s role in API management ?   <--------
+Exactly what the API gateway does will vary from one implementation to another. Some common functions include
+authentication, routing, rate limiting, billing, monitoring, analytics, policies, alerts, and security.
+ 
+7->What are the different types of APIs, and how are they used?
+->Private APIs: Private APIs, also known as internal APIs, are used to connect different software components within
+ a single organization, and they are not available for third-party use. For instance, a social media application 
+ might have a private API that handles the login workflow, another private API that handles the feed, and yet another 
+ private API that facilitates communication between users. Some applications may include dozens or even hundreds of 
+ private APIs.
+ 
+->Public APIs: Public APIs provide public access to an organization's data, functionality, or services, which 
+third-party developers can integrate into their own applications. 
+Some public APIs are available for free, while others are offered as billable products. 
+For instance, an e-commerce application may incorporate a public payment API, such as Stripe, 
+to handle payment processing without having to build that functionality from scratch.
+
+->Partner APIs: Partner APIs enable two or more companies to share data or functionality in order to collaborate 
+on a project. They are not available to the general public and therefore leverage authentication mechanisms to 
+ensure they are only used by authorized partners.
+
+8-1->Different Category of API's ?
+The most frequently used architectural styles are:
+
+->REST: As discussed above, REST is the most popular API architecture for transferring data over the internet. 
+In a RESTful context, resources are accessible via endpoints, and operations are performed on those resources 
+with standard HTTP methods such as GET, POST, PUT, and DELETE.
+
+->SOAP: SOAP, which stands for Simple Object Access Protocol, uses XML to transfer highly structured messages 
+between a client and server. SOAP is often used in enterprise environments or legacy systems, and while it includes 
+advanced security features, it can be slower than other API architectures.
+
+->GraphQL: GraphQL is an open source query language that enables clients to interact with a single API endpoint to 
+retrieve the exact data they need, without chaining multiple requests together. This approach reduces the number 
+of round trips between the client and server, which can be useful for applications that may run on slow or unreliable 
+network connections.
+
+->Webhooks: Webhooks are used to implement event-driven architectures, in which requests are automatically sent in 
+response to event-based triggers. For instance, when a specific event occurs in an application, such as a payment 
+being made, the application can send an HTTP request to a pre-configured webhook URL with the relevant event data 
+in the request payload. The system that receives the webhook can then process the event and take the appropriate action.
+
+->gRPC: RPC stands for Remote Procedure Call, and gRPC APIs were originated by Google. In gRPC architectures, a client 
+can call on a server as if it were a local object, which makes it easier for distributed applications and systems to 
+communicate with one another.
+
+----> Important 
+REST vs SOAP APIs
+
+8-2->
+SOAP (also known as Simple Object Access Protocol) is a secure way to build APIs, and it works by encoding data in the 
+XML format. REST (Representational State Transfer) APIs are more flexible, and they support data transfer in different 
+formats, including XML, HTML, plain text, JSON, and more. When comparing SOAP vs REST, both have their benefits and 
+disadvantages.
+
+8-2-1->
+Benefits of using SOAP APIs
+Even though SOAP has very strict implementation guidelines, it is also known for its extensibility. Like other 
+approaches to delivering APIs, SOAP uses HTTP for transport, but it can also leverage simple mail transport protocol 
+(SMTP), transmission control protocol (TCP), and user data protocol (UDP) to pass messages back and forth. This allows 
+for more flexibility when it comes to moving data, content, and media.
+
+8-2-2->
+SOAP APIs also provide these other advantages when compared to REST APIs:
+SOAP is language, transport, and even platform independent, whereas REST requires the use of HTTP.
+SOAP is very secure, which makes it perfect for systems that handle sensitive data, such as financial services and 
+online banking applications.
+SOAP works well in distributed enterprise environments, instead of depending on direct point-to-point communication.
+SOAP has built-in error handling features, which makes it easy to understand what happened when a request fails.
+
+8-2-3->
+SOAP API disadvantages <------
+While SOAP can be extremely useful in certain situations, there are also times where REST may be the better option. 
+Some drawbacks include:
+SOAP does not support caching API calls.  <----
+SOAP is much more complicated than REST, which can have performance implications.
+SOAP is much less adaptable than REST.
+SOAP is usually slower than REST.
+
+8-3->
+What is the difference between SOAP APIs and REST APIs?
+SOAP (Simple Object Access Protocol) and REST (Representational State Transfer) are two of the most common architectural
+ styles for building APIs. SOAP APIs use XML and include built-in features for security and error handling, which makes
+ them well-suited for enterprise environments with strict standards. On the other hand, REST APIs use JSON for resource 
+ representation, which is less verbose than XML. REST APIs are usually easier to understand, consume, and integrate 
+ than SOAP APIs, but they lack some of SOAP's advanced features. Learn more about the differences between SOAP and REST.
+
+-------->Important 
+9->API Caching Support ?
+A REST API works by sending a request to the server and getting a response in return. Every time you request data, it 
+uses the GET method to fetch that information. Do you think that if you visit a different page of the same website and 
+then get back to the original page, another GET request will be sent to the server to get the same data? The answer to 
+it is no. Let’s take a look at it.
+
+9-1->API Caching
+Caching is the ability to store copies of frequently accessed data in several places along the request-response path. 
+The REST APIs are cacheable. It is one of its architectural constraints.
+When a client requests some resources, the request first goes through a cache and then to the server. If the cache 
+contains the updated data, the request uses that data to satisfy the user request. If it does not, the data comes from 
+the server.
+
+9-2->There are three types of caches:
+Client Cache
+Server Cache
+Proxy Cache
+The client cache caches the response on the browser level. The server cache does the same thing but on the server. 
+And proxy cache implements caching on the proxy server between the client and the server.
+
+9-3->Cache Supported HTTP Methods
+Since REST API is cacheable, two methods support the caching: GET and POST. The GET request is cached by default. 
+But the POST request, on the other hand, can be cached if required. You can set your POST request to cache by either 
+providing it with an Expire or a Cache-Control header.
+The PUT and DELETE methods’ responses are not cacheable.
+
+9-4->Benefits of API Caching  <------
+There are several benefits of caching your API’s response. Here are some of them:
+Your quality of service improves.
+The website consumes less bandwidth.
+The website latency decreases.
+Server load also decreases.
+ 
+10->What is the difference between APIs and webhooks?
+Webhooks are lightweight callback functions that facilitate event-driven communication between APIs. In the traditional 
+request-response cycle, an API client actively sends a request to an API server in order to retrieve data or perform 
+actions. In contrast, a webhook listens for a specific event, such as a new user account being created or a payment 
+being made, and performs a pre-configured action in response. This eliminates the need for the API client to poll the 
+server, as the server will automatically perform the appropriate action or return the relevant data when the specified 
+event occurs.
+
+11->What is the difference between service-oriented architecture (SOA) and microservice architecture?
+Service-oriented architectures (SOAs) and microservice architectures are both comprised of modular services that 
+perform specific business functions, but they have several key differences. For instance, microservices communicate 
+with one another through APIs, whereas SOA services rely on an enterprise service bus (ESB) for routing, transforming, 
+and managing messages. Additionally, SOA services tend to use SOAP, whereas microservices tend to use lightweight 
+protocols like REST. Finally, SOA services are less granular than microservices, and they may also be dependent on 
+one another.
+
+
