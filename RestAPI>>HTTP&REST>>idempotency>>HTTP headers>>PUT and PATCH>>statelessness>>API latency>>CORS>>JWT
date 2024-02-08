@@ -1,1 +1,198 @@
+Some Interview Question TO REST API
+
+What is the relationship between HTTP and REST?
+HTTP, which stands for Hypertext Transfer Protocol, is the dominant protocol for transmitting data between clients and 
+servers on the internet. HTTP operates on a stateless request-response model, in which the client sends a request to 
+the server and the server responds accordingly—without any knowledge of the client’s previous requests. 
+REST emphasizes standardized, stateless interactions between clients and servers, which makes HTTP the ideal choice 
+for implementing RESTful principles.
+
+What are HTTP headers, and which ones are most commonly used?
+-HTTP headers contain the metadata that is included in an API request or response. These key-value pairs provide 
+essential details that help the API client and server communicate more effectively—and enable developers to customize 
+and optimize the API’s behavior.
+
+-Some of the most common request headers are Accept, which defines the media types that the client is able to accept from
+ the server; Authorization, which is used to send the client’s credentials to the server when the client is attempting 
+ to access a protected resource; and Content-Type, which defines the media type in the request body.
+
+-The server also includes HTTP headers in its response to the client. Some of the most common response headers include 
+Cache-Control, which defines how the response should be cached, and Set-Cookie, which instructs the client to store a 
+cookie with the specified attributes.
+
+What is the difference between the PUT and PATCH methods?
+The PUT and PATCH methods are both used to modify resources, but they handle updates differently. The PUT method works 
+by replacing a resource with the data that is included in the request body. This means that any fields or properties 
+not included in the request body are deleted, and any new fields or properties are added.
+
+In contrast, the PATCH method is used for making partial updates to a resource. For instance, if you have a movie 
+resource with fields for title, year, and rating, but you only want to update the rating, you could use the PATCH 
+method to send a request that only includes the new value for the rating field. The rest of the resource would remain 
+unchanged. This behavior reduces the amount of data that must be transferred, which makes PATCH more efficient than PUT.
+
+What is idempotency in a RESTful context?
+An HTTP method is considered idempotent if it will result in the same outcome no matter how many times it is executed. 
+All read-only methods are idempotent, as are PUT and DELETE. However, POST and PATCH are not idempotent. POST is not 
+idempotent because calling it multiple times will result in multiple resources being created. PATCH can be idempotent, 
+but it is not necessarily so. For instance, a PATCH request may increment a specific field every time it is called, 
+which would modify the resource every time.
+
+What are the most common HTTP status codes?
+HTTP status codes are three-digit numbers included in the server’s response that indicate the result of a 
+client’s request. Some of the most common HTTP status codes include:
+
+200 OK: The request was successful, and the response includes the requested data.
+
+201 Created: The request was successful, and the server has created a new resource with the provided data.
+
+204 No Content: The request was successful, but there is no additional data to send in the response. 
+This code is often used in response to DELETE requests.
+
+400 Bad Request: The server cannot understand the request due to a client error, malformed syntax, or invalid 
+parameters.
+
+401 Unauthorized: The client lacks valid credentials to access the requested data or perform the desired action.
+
+403 Forbidden: The client does not have permission to access the requested resource, even with valid 
+authentication credentials.
+
+404 Not Found: The server cannot find the requested resource or endpoint.
+
+500 Internal Server Error: The server encountered an unexpected issue.
+
+503 Service Unavailable: The server is not ready to handle the request, often due to overload or maintenance.
+
+504 Gateway Timeout: The server acting as a gateway or proxy did not receive a timely response from the 
+upstream server.
+
+What are the advantages and drawbacks of statelessness in REST?
+Statelessness is a hallmark trait of REST APIs, and it has many benefits. REST API servers don’t need to manage 
+session data, which allows them to handle a large number of concurrent requests and supports horizontal scaling. 
+This also leads to streamlined server logic and faster response times.
+Statelessness has a few drawbacks, as well. Requests to a REST API may have larger payloads, as the client must 
+include all of the necessary information. This may have a negative impact on network performance. Statelessness 
+may also require clients to handle retries in the case of network or server failures, as there is no server-side
+context to help with these error scenarios.
+
+What is API latency?
+API latency is the amount of time it takes for an API to respond to a request. Elevated API latency can 
+negatively impact your end-user’s experience and lead to churn, which makes it an important metric to monitor 
+when assessing your API’s overall performance.
+
+What’s the difference between API latency and API response time?
+Some people get confused when asked to distinguish between latency and response time. In actuality, these terms 
+refer to the same thing: the amount of time that passes—from the client’s perspective—between the moment a 
+request is sent and the moment the response has been fully processed.
+
+Request Process Time(Queue time) + Response Process Time(Service time) = API Latency.
+
+What are the causes of elevated API latency?
+There are many factors that can contribute to API latency, and diagnosing the issue may require a careful 
+investigation that spans each layer of the tech stack. Some common causes include:
+
+-Network latency: Network connectivity issues or high network traffic can significantly increase API latency. 
+If data must travel a long distance between the client and server or if there are issues with the network 
+infrastructure, it can result in delays.
+-Server overload: When the API server becomes suddenly inundated with requests, it may struggle to process them 
+all in a timely manner, leading to increased latency. This problem can be compounded by inadequate server 
+resources, such as CPU, memory, or disk I/O.
+-Inefficient code: Certain coding patterns—such as algorithms with high time complexity, unoptimized SQL queries,
+and synchronous operations—can significantly slow down response times.
+-Third-party dependencies: API integration enables developers to incorporate third-party functionality—such as 
+payment processing, geolocation services, and messaging—into their applications. However, if these external 
+dependencies experience downtime, it can lead to increased latency in the APIs and applications that rely on 
+them.
+-Geographic location: The physical location of the API client and server can contribute to an API’s latency 
+because data transfer is not instantaneous. It is instead limited by the speed of light and the characteristics 
+of the network infrastructure.
+-Throttling or rate limiting: APIs often implement rate limiting or throttling to control the number of requests 
+that a single client can make. When clients exceed these limits, they may experience delays or receive errors.
+
+How can you measure and test API latency?
+-Account for both queue time and service time
+-Consider different scenarios: An API’s performance can be affected by a variety of factors, so it’s critical 
+to monitor latency under normal usage, peak traffic, and worst-case-scenario error conditions to ensure your 
+API will perform adequately in the real world.
+-In Postman: Monitoring latency
+As an alternative to request timeouts, website response latency can be monitored by comparing values of the 
+responseTime variable within test scripts.
+
+ pm.test('Response latency is acceptable', () => 
+ pm.expect(pm.response.responseTime).to.be.lte(1000));
+ // responseTime is in milliseconds
+
+-Test throughout the API lifecycle
+
+How can Postman help you reduce your API’s latency?
+-Test your API’s response time under real-world conditions
+-Test and monitor API response times
+-Visualize monitor data on a filterable dashboard
+-Forward API performance data to other observability tools
+
+ 
+What is CORS?
+CORS, which stands for “Cross-Origin Resource Sharing,” is a security standard that enables servers to indicate 
+the origins from which browsers are allowed to request resources. It was created to refine the same-origin 
+policy (SOP), which browsers use to prevent malicious applications from accessing sensitive data on domains 
+they do not control.
+
+Resolution To CORS ?
+Cross-Origin Resource Sharing (CORS) errors occur when a server doesn't return the HTTP headers required by the 
+CORS standard. To resolve a CORS error from an API Gateway REST API or HTTP API, you must reconfigure the API 
+to meet the CORS standard.
+
+Troubleshooting CORS Errors and Issues?
+Here are some steps you can take to troubleshoot CORS errors and issues:
+-Check the browser console for CORS errors and issues. The console will show any CORS-related errors, including 
+the specific error message and the line of code causing the error.
+-Verify that the server is sending the correct CORS headers. The server should send the 'Access-Control-Allow-Origin', 'Access-Control-Allow-Methods', 
+'Access-Control-Allow-Headers', and 'Access-Control-Allow-Credentials' headers, as appropriate.
+-Ensure that a firewall or proxy does not block the request. Firewalls and proxies can block requests to 
+different origins, causing CORS errors.
+-Check if the request is being made using HTTPS or HTTP. Some servers may not allow CORS requests over HTTP.
+-Ensure the server is configured to allow the necessary HTTP methods and headers. If the server does not allow 
+them, the browser will not send the request to the server.
+
+Solving CORS Errors and Issues?
+Once you have identified the root cause of the CORS error, you can take steps to solve it. 
+The following are some actions you can take to solve CORS errors and issues.
+To solve CORS errors and issues, you can take the following actions:
+-Add the 'Access-Control-Allow-Origin' header to the server response. This header specifies the origins that are 
+allowed to access the resource.
+-Set the 'Access-Control-Allow-Credentials' header to 'true' if using credentials. This header tells the browser 
+to send cookies or authorization headers with the request.
+-Allow the necessary HTTP methods and headers in the server configuration. This will ensure that the server 
+allows the requested methods and headers.
+-If a firewall or proxy blocks the request, configure them to allow the request. You may need to allowlist the 
+web application's domain in the firewall or proxy configuration.
+-Use a proxy server to route the request to the server from the same origin. This can bypass the CORS 
+restrictions and allow the web application to access the necessary resources.
+
+What is JWT?
+JWT, which stands for JSON Web Token, is an open standard for securely sharing JSON data between parties. 
+The data is encoded and digitally signed, which ensures its authenticity. JWT is widely used in API 
+authentication and authorization workflows, as well as for data transfer between clients and servers.
+
+What is the structure of a JWT?
+A JWT has three sections: a header, a payload, and a signature. Each section is a Base64-encoded string, and 
+the sections are separated by periods. A typical JWT looks like this, where the X’s represent the header, the 
+Y’s represents the payload, and the Z’s represents the signature:
+
+xxxxxx.yyyyyy.zzzzzz
+
+A more explicitly written JWT would look something like this:
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY
+3ODkwIiwibmFtZSI6IkphbmUgRG9lIiwiaWF0IjoxNjk3MjM5MDIyfQ.5CerSPBCrO_3Wdi
+yPjR7HoWBOeXsuq2AcfplJeG7erc
+
+Where can JWT be used?
+JWT can be used alongside several other protocols or standards where it is important to maintain data integrity. Some of them include:
+
+OAuth 2.0: OAuth 2.0 is a widely used authorization framework that allows third-party applications to get consented access to a user’s data. JWTs can be used to issue and verify access and refresh tokens in OAuth 2.0.
+OpenID Connect (OIDC): OpenID Connect is an identity layer built on top of OAuth 2.0, and it uses JWT for identity, authentication, and authorization. In an OIDC context, an identity provider issues JWTs as identity tokens, which are used to represent identity information in a standardized format. Access tokens in OIDC are also JWTs.
+SAML (Security Assertion Markup Language): SAML is an XML-based standard for exchanging authentication and authorization data between parties. JWTs can be used within SAML assertions to carry user and attribute information, providing an alternative to XML-based data formats and enhancing compatibility with modern web applications.
+Federated identity and single sign-on (SSO): JWTs can be used to convey identity information and securely authenticate users across multiple applications or services in federated identity scenarios and single sign-on ecosystems. JWTs are often used for identity token exchange between identity providers and relying parties.
+
+
 
