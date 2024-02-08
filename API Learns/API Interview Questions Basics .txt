@@ -1,6 +1,6 @@
-API Interview Questions Basics / Office Day 1 
+API Interview Questions Basics / Office Day 1 (SDET Lecture)
 
-List the differences between API and Web Service?
+List the differences between API and Web Service?        <<<<
 Definition : 
 API : API is an Application Programming Interface that acts as an interface between two applications.
 Web Services : Web services are a type of API that must be accessed through a network connection.
@@ -10,52 +10,52 @@ Web Services : It provides support for HTTP protocol.
 XML Support : 
 API : API supports XML and JSON.
 Web Service : Web service supports XML.
-
+------------------------------------------------------------------------------------------------------------------------------------------------
 What are the advantages of API Testing?
 Faster bug fixes
 Reduced costs: 
 Better test coverage:
-
+--------------------------------------------------------------------------------------------------------------------------------------------------
 What needs to be verified in API testing?   <----------------
 API testing helps to verify the correctness of data and responses
 HTTP status codes of the API needs to verified.
 Authorization details.
 API testing should verify the functionality and behavior.
-
+--------------------------------------------------------------------------------------------------------------------------------------------------
 What is Latency in API testing?  <---------------------Latency
 Latency in API testing is how long it takes for the request to reach the server.
-
+--------------------------------------------------------------------------------------------------------------------------------------------------
 What is the role of headers in API testing?
 Headers in API testing plays an important role in providing additional information that is not included in the request body. 
 Herders are important in controlling the behavior of the server in handling the request, to provide authentication information, 
 or to provide metadata about the request or response.
-
+--------------------------------------------------------------------------------------------------------------------------------------------------
 What is the purpose of authentication in API testing? <--------------------------Authentication
 API authentication is a combination of technology or process that verifies the identities of users who want access to an API.
-
+--------------------------------------------------------------------------------------------------------------------------------------------------
 What is API versioning, and why is it important in API testing?
 API versioning involves specifying a version number in the API endpoint or headers to ensure the backward compatibility. 
 It manages the changes in the API over time:
 It ensures the correct version of the API is being tested.
 It ensures that the changes in the API do not break the existing client applications.
-
+--------------------------------------------------------------------------------------------------------------------------------------------------
 What is the purpose of HTTP status codes in API testing?
 HTTP status codes indicate whether a specific request successfully completed or not. 
 These are embedded in the HTTP header of a page to tell the browser the result of its request.
-
+--------------------------------------------------------------------------------------------------------------------------------------------------
 What is the purpose of the request and response body in API testing?
 The request body is used to send and receive data such as input parameters, or data to create/ update resources via the REST API. 
 The response body is the data API send to the client.
-
+--------------------------------------------------------------------------------------------------------------------------------------------------
 What is API mocking?  <------------------------------------Mocking 
 API mocking is practice of simulating the behavior of an API endpoint during testing without actually invoking the real API. 
 It is beneficial during the development stage.
-
+--------------------------------------------------------------------------------------------------------------------------------------------------
 Why API Mocking is used in API Testing? <------------------------------Mocking 
 Mock APIs are useful when applications have dependencies with external APIs.
 Mock APIs are useful for testers to plan and validate test executions and for developers to do unit testing and identify the initial development stages.
 Mock APIs are useful in situations where the complete API needs to be made available for consumer testing before committing it to development stage.
-
+--------------------------------------------------------------------------------------------------------------------------------------------------
 What is API security testing, and why is it important? <-----------------------Api Security 
 API security testing is the process of testing the vulnerabilities in the API. 
 This is done through penetration testing or manual scanning of the APIs. API security testing is important:
@@ -63,13 +63,12 @@ ex: Cloud-based applications rely on APIs to exchange data and interact with eac
 ex: Online operations and businesses rely on APIs to integrate different systems and services. This causes potential security risks.
 ex: Organizations rely on security solutions that are built for web apps to detect and secure from API threats. 
 Such solutions cannot detect unique vulnerabilities and gaps in the APIs.
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
 How do you ensure the security of APIs in your tests? <-----------------Security Check 
 -Use secure communication protocols like HTTPs to encrypt data transmitted between client and server.
 -It is important to properly implement authentication and authorization mechanisms to ensure that only authorized users can access the API endpoints and perform the authorized actions.
 -Ensure that all the input data in the API requests are properly authorized, validated, and sanitized to prevent injection attacks and cross-site scripting attacks.
-
+--------------------------------------------------------------------------------------------------------------------------------------------------
 Some 2023 Top 10 security API attacks?
 API1:2023 - Broken Object Level Authorization : APIs tend to expose endpoints that handle object identifiers, creating a wide attack surface of Object Level Access Control issues. 
 Object level authorization checks should be considered in every function that accesses a data source using an ID from the user.
@@ -102,23 +101,23 @@ A proper inventory of hosts and deployed API versions also are important to miti
 API10:2023 - Unsafe Consumption of APIs : Developers tend to trust data received from third-party APIs more than user input, and so tend to adopt weaker security standards. 
 In order to compromise APIs, attackers go after integrated third-party services instead of trying to compromise the target API directly. Continue reading.
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
 
 Paid API'S ?
 Metered Model or Pay-As-You-Go Model
 Amazon Web Services and Google Cloud have successfully implemented the PAYG pricing model to monetize their APIs. The Pay-Per-Use or Pay-Per-Call is one of the best examples of the PAYG API pricing models. 
 Here, the user pays for every single time the API gets a request and retrieves the required data.
-
+--------------------------------------------------------------------------------------------------------------------------------------------------
 Fixed API Pricing Model
 The fixed pricing model is very similar to the subscription model, where API users or developers pay a flat rate to use the API. 
 As they are billed on a monthly or yearly basis, there may or may not be any restrictions on API usage.
-
+--------------------------------------------------------------------------------------------------------------------------------------------------
 Penetration Testing ? (penetration testers or ethical hackers) <--------------Penetration Testing
 A penetration test (pen test) is an authorized simulated attack performed on a computer system to evaluate its security. Penetration testers use the same tools, techniques, 
 and processes as attackers to find and demonstrate the business impacts of weaknesses in a system. Penetration tests usually simulate a variety of attacks that could threaten a business. 
 They can examine whether a system is robust enough to withstand attacks from authenticated and unauthenticated positions, as well as a range of system roles. With the right scope, a pen test 
 can dive into any aspect of a system.
-
+--------------------------------------------------------------------------------------------------------------------------------------------------
 
 What is input validation?
 Input validation is the process of analyzing the inputs and disallowing the inputs that are considered unsuitable. 
