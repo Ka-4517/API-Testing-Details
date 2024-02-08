@@ -1,0 +1,52 @@
+Starting Postman Day 3
+
+Dummy API : https://reqres.in/
+Karanjob4517@gmail.com<---My postman ID/ Karan@123
+
+What is an HTTP request?
+It works as a communication interface or a request-response protocol between a client and server. 
+The primary use of the HTTP request is to access a resource on the server. 
+
+What are the important authorization methods supported by Postman?
+1) API Key, 
+2) Oauth 1.0 and 2.0, 
+3) Basic auth, 
+4) Digest auth, 
+5) Bearer Token, 
+6) AWS Signature, 
+7) Hawk Authentication, 
+8) NTLM Authentication.
+
+12) What is the main difference between Authorization and authentication?
+Here are a few differences between authorization and Authentication:-
+Authorization is the act of allowing or permitting someone, whereas authentication is proving that something is genuine.
+Authentication always comes first, while authorization comes after authentication.
+Authorization is open to anyone with permission, whereas authentication requires you to have a password.
+
+10) What is Basic Auth in Postman?
+In Postman, Basic Auth is an authorization method provided for HTTP user agents like web browsers to enter username and password. After entering the username and password that you can associate with the request.
+
+Note that even though your credentials are encoded, they are not encrypted! It is very easy to retrieve the username and password from a basic authentication. Do not use this authentication scheme on plain HTTP, but only through SSL/TLS.
+
+Q.All Auth Details ?
+No Auth: If your request doesn’t require authorization, select No Auth from the Authorization tab Type dropdown list.
+API Key: With API key auth, you send a key-value pair to the API either in the request headers or query parameters.
+Bearer Token: Bearer tokens enable requests to authenticate using an access key, such as a JSON Web Token (JWT).
+JWT Bearer: Postman also supports generating JWT bearer tokens to authorize requests.
+Basic Auth: Basic authentication is a simple authentication scheme built into the HTTP protocol.
+Digest Auth: Digest authentication is a more secure version of basic authentication.
+OAuth 1.0: OAuth 1.0 is an open standard for authorization.
+OAuth 2.0: OAuth 2.0 is an open standard for authorization.
+
+Which kind of encoding does Postman accepts for authorization credentials?
+Postman only accepts Base64 encoding, which is provided inbuilt in Postman. Otherwise, it would benefit when you use 3rd party websites that help you to convert the credentials into base64.
+
+Why does Postman never accepts any other encoding apart from Base64?
+You can use base64 as it helps us transmit the data into the textual form and send it as HTML form data. Moreover, we must rely upon the same 64 characters in any encoding language.
+
+What is a Pre-Request script?
+Pre-request scripts help you to execute JavaScript before a request runs. It allows you to accomplish pre-processing tasks like setting variable values, parameters, headers, and body data.
+
+
+
+
