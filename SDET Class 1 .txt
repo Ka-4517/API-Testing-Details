@@ -1,0 +1,49 @@
+SDET Class 1 (08/Feb/2024)
+
+1) What is Client & server?
+A client is a local computer on the user's side. 
+It sends a request to a server to get certain information or perform certain system actions in response.
+The application sending the response is called the server. 
+
+2) Client-server architecture
+A client-server model is a distributed application structure that partitions tasks and/or workloads between a resource provider (server) and its requester (client). 
+Web apps are good examples of client-server architecture.
+
+3) What is an API?
+API is an application programming interface designed for lightweight data interchange (text-based data exchange format) 
+between two computer applications operating on the same hardware device or between different computers in different geographical areas.
+
+4) What is API Testing? Why it is needed?
+API testing is the process of sending requests to an API and monitoring the responses to ensure its behaving as expected.
+API testing is important for ensuring that your API performs as expected when faced with a wide variety of expected and unexpected requests. 
+API tests are also faster to run and more isolated than UI tests, which makes it quicker and easier to identify and resolve bugs. 
+
+
+5) Types of an API - SOAP & Rest
+The SOAP approach is highly structured and uses XML data format. 
+REST is more flexible and allows applications to exchange data in multiple formats.
+
+6) API Vs Webservice
+1. To narrow down the probabilities of defect detection at a later stage
+2. Automation possibilities for the API testing
+3. Single testing iteration, multiple platform quality assurance
+4. Overall cost reduction for testing
+5. API testing is time efficient as well
+6. Security concerns
+7. Sort of performance check
+8. High Speed
+  
+7) Rest API methods
+GET to retrieve a resource;
+PUT to change the state of or update a resource, which can be an object, file or block;
+POST to create that resource; and
+DELETE to remove it.
+
+8) http Vs https
+HTTPS is HTTP with encryption and verification. 
+The only difference between the two protocols is that HTTPS uses TLS (SSL) to encrypt normal HTTP requests 
+and responses, and to digitally sign those requests and responses. 
+As a result, HTTPS is far more secure than HTTP.
+Example: Http------>Password:Karan@123------>Database(Karan@123)
+         Https------>Password:Karan@12------->Database(xyeuen%hcnc) In this its encrypted.
+		 
