@@ -1,0 +1,96 @@
+Interview Questions On Test cases 
+
+Q.1.  Write testcases for Elevater Lift ?
+>>Basic Functional Test Cases For Lift
+Check whether the lift can move up and down
+Check whether the lift moves to the corresponding floor as the button of the floor is clicked
+Check whether the lift has buttons outside to stop the lift by pressing the direction indicator button.
+Check whether the lift stops at that current floor when up/down buttons at a particular floor are pressed outside the lift.
+Check whether the door opens in the lift when the selected floor arrives.
+Check whether the door closes when the desired floor is selected.
+Check whether the emergency button works
+Check whether the functionality of other buttons like – Fan, Light etc works as expected.
+Check whether the display indicates the current floor status of the lift.
+Check whether the lift doors can’t be opened when the lift is moving down or upward.
+Check whether the lift door opens when the user puts any object or body parts in between the lift doors when the door is about to close.
+
+>>Safety Conditions Test Cases
+Check whether the STOP button causes the elevator to stop.
+Check whether the Pressing ALARM button reaches security within a specified amount of time.
+Check whether the elevator’s maximum weight capacity meets or exceeds specifications.
+Check the integrity of the pulley system
+Check the integrity of the braking system
+Check whether the lift door stays open and gives an alert message when placing any object near the door.
+Check whether the lift gives a. Alert message when adding one more person than the specific weight limit.
+Check the alert message when adding more people regarding the weight limit and verify the volume limitations.
+Check whether the alert message is indicated by creating smoke or fire inside the lift.
+Check whether the lift opens in the middle of movement when clicking on the open button
+Check whether the lift halted at the floor or free-fall in case of a power cut.
+
+>>Positive Test Case For Lift
+Check whether the lift opens when you press the enter button from outside.
+Check the door opening and closing operation.
+Check the opening operation by waiting outside and verify whether the opening duration is as expected.
+Check the closing operation of the lift inside the lift without pressing the closing button and verify whether the closing duration is as expected.
+Check the closing operation of the lift inside the lift by pressing the closing button and verify whether the closing duration is as expected.
+Check whether the lift functions as usual even when there are power fluctuations or low voltage.
+Check the lift operates smoothly when a heavy load is in the lift.
+Check whether the lift stops at each floor when clicking multiple follows in the control panel.
+Check whether the floor gets deselected when clicking on the floor button twice.
+Check whether the lift moves to the nearest floor when two people are trying to access the lift from different floors.
+
+>>Negative Test Case For Lift
+Check the behavior of the lift when the capacity of the lift exceeds.
+Check the behavior of the lift when there is smoke or fire inside the lift.
+Check the behavior by pressing the open button while the lift is moving.
+Check the behavior by pressing the stop button before reaching the specific floor.
+Check the behavior of the lift when the power shuts down
+Check the behavior of the lift when clicking on different floors randomly.
+Check the behavior of the lift when placing an object in the middle of the door.
+
+
+Q.2.  Write Test cases For Fridge ?
+1   TC_01   To verify that the setting of the Refrigerator as define or not.
+2	TC_02	To verify all the cooling settings.
+3	TC_03	To verify that the light in the refrigerator turns on when opened. 
+4	TC_04	To verify that the light in the refrigerator turns off when closed. 
+5	TC_05	To verify how much time it takes to chill the water.
+6	TC_06	To verify how much time it takes to freeze the water in different settings.
+7	TC_07	Check that if there are any specific settings for the vegetables and other specific types of food. 
+8	TC_08	To verify for the brightness of the light is working properly or not.
+9	TC_09	To verify that the light is producing heat when the door is opened for longer time.
+10	TC_10	Check that the compressor cut off time.
+11	TC_11	Check the defrost mode is working properly or not.
+
+
+
+Q.3.  Write Test cases For Payment Functionality ?
+Verify if all the options of payment portable are accessible.
+Verify that the debit/credit cards can automatically be accessed if added previously by the particular user.
+Verify that the user gets an acknowledgment slip after the transaction./ success message 
+Verify if the credit/debit cards used by the user for payment have not expired.
+Verify that the deducted amount is correct as shown to the user.
+Check the session expires after a particular time.
+Verify that the payment portal is using a secured link i.e. HTTPS but not HTTP.
+Check if after the session ends the payment is happening.
+Check if you can, each payment option is selectable and text boxes are typeable as well.
+Verify whether the saved credit/debit card is available on the payment page.
+Check whether you can set a card as default.
+Check whether the customer receives the corresponding notification email and text after a successful/unsuccessful payment.
+Verify whether the payment gateway redirects back to the application after the completion of payment.
+Check if the amount, taxes, discount, store credits etc get calculated correctly.
+Check whether the system changes the currency and language format based on the user’s request.
+Check whether the payment doesn’t proceed when any mandatory field is empty.
+Check the system’s behaviour when the internet gets disconnected during payment.
+Check if any double payment happens
+Verify different combinations of valid and invalid data for Card number+Expiry date + CVV.
+Check whether each payment option gets directed to the respective payment flow.
+
+Q.4.  Write Test cases for ATM machine ?
+Check that the Bank ATM machine powers on and displays the welcome screen.
+Check that the ATM accepts a valid debit card.
+Check that the ATM requests and accepts a valid PIN after inserting a debit card.
+Check that the ATM returns the debit card after completing a transaction.
+Check that the ATM dispenses the correct amount of cash after a successful withdrawal request.
+Check that the ATM allows a user to check account balance.
+Check that the ATM rejects an incorrect PIN after inserting a debit card.
