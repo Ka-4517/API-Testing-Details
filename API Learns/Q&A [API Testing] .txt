@@ -1,0 +1,104 @@
+Q&A [API Testing] 
+
+1. How do you Define an API with an Example?
+An Application Programming Interface (API) is a set of methods and protocols that allow two applications to 
+interact with each other.
+An example of an API is Google Maps, which allows you to integrate its services into your website or mobile 
+app so that users can search for places, get directions, and view maps without leaving your website or app.
+
+
+2. What are the Different Types of APIs?
+Public APIs:These are APIs that are publicly available. Popular examples of public APIs include Facebook, 
+Twitter and Google Maps.
+
+Private APIs:These are APIs that are private to a particular organization or business and are used internally 
+to facilitate the use of certain data and functions.Admin accessing there users detail is a example of private api.
+
+Shared APIs:These are APIs that are managed by multiple organizations and provide data and functionality to all 
+of them in a shared manner.ex: Accessing todo list of an employee.
+
+Composite APIs:APIs that aggregate and coordinate multiple underlying APIs to provide a unified interface or functionality. 
+Here's an example of a composite API for a travel booking platform:/flights,/hotels,/car-rentals,/itinerary.
+
+
+3. What are the Main Differences Between API and Web Service?
+Every web service is an API but not every API is a web service.
+Web services always require a network for operation, whereas APIs can function without a network connection.
+
+
+4. What is Web API?
+API means Application Programming Interface. A Web API is an application programming interface specifically 
+designed for web applications. It allows web applications to interact with each other or exchange data.
+
+
+6. What is the Difference Between Client and Server APIs?
+Client APIs allow applications to access data, while Server APIs allow applications to provide services.
+
+
+8. How do you Test for Performance Issues in an API? 
+To test for performance issues in an API, you can use tools like JMeter and LoadRunner that can monitor 
+response times and analyze load tests. Additionally, you can test for server-side performance by checking 
+server logs or using system monitoring tools like New Relic or Datadog.
+
+
+9. Which is a Read-only HTTP Method?
+The GET method is read-only in HTTP protocol.
+
+
+10. Which Method is Used to Create a Resource in APIs?
+Usually, the POST method is used for creating resources in APIs because it sends data from the client side to 
+the server side.
+
+
+11. Which Protocol is Used by RESTful Web Services as a Medium of Communication Between Client and Server?
+HTTP (Hypertext Transfer Protocol) is used by RESTful web services as a medium of communication between client 
+and server. 
+
+
+12. What is the Category of 4XX HTTP Codes Belonging to?
+The Category of 4xx HTTP Codes belongs to Client Error Code. The reason behind these errors could be that 
+the client made an invalid request or failed to send data in its request message. 401 Unauthorized and 403 
+Forbidden are some examples.
+
+
+13. How do You Troubleshoot Issues Related to APIs?
+The first step in debugging API difficulties is to enable logging in order to monitor any failures or problems. 
+It is also critical to check all input parameters before sending them through the API, since this can prevent 
+many problems from arising. It is also a good idea to see if there are any known bugs with the API or its 
+dependencies that can be fixed by upgrading or patching them. Finally, in order to correctly determine where 
+any difficulties may be originating from, it is critical to have a clear grasp of the system architecture and 
+how different components interact with one another.
+
+14. What is API Testing?
+API testing involves testing the interactions and responses of APIs to ensure they behave as expected and meet 
+the specified requirements.
+
+
+15. What does the Process of API Testing Involve?
+The process of API testing involves verifying that the application is functioning as expected by making sure 
+that there are no errors in the code. It also includes validating that the responses sent by the server comply 
+with pre-defined requirements, as well as ensuring that data sent through the API is secure. It may also 
+include performance testing, which involves measuring the speed and accuracy of the responses sent by the 
+application.
+
+
+20. How do You Ensure the Quality and Accuracy of Your API Tests?
+By adding assertions to our API tests, we can assure the quality and correctness of our API tests and uncover 
+possible problems that may exist. Monitoring the API tests for a specified period of time to see if any unusual 
+behavior is emerging from the API. Also integration of the tests with CI/CD pipelines and the scheduled tests 
+can convey a lot about the API quality. 
+
+22. What Difficulties Have You Encountered While Testing APIs?
+
+
+24. What are Some Common Challenges When Performing API Testing?
+There are several common challenges when performing API testing: 
+
+Access – APIs may not be publicly accessible and may require special credentials or access rights.
+
+Complexity – APIs can be complex, making it difficult to develop robust test plans.
+
+Security – APIs may be vulnerable to attacks and require special security measures. 
+
+Also, the challenges may vary based on the project architecture and design.
+
