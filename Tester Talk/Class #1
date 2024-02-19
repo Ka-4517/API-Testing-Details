@@ -11,4 +11,8 @@ Web services are the s/w package that is used for communicating between two devi
 2. Get booking id detail
 3. Create Booking "Post"
 4. Generate Token "Post"
-5. 
+5. Update Booking "Put"
+: PUT & DELETE only admin able to perform that's why we need token.
+6. Delete Booking "Delete" -> Create Booking -> Update booking (Token ) -> Delete Booking (Token )
+
+
