@@ -6,3 +6,9 @@ How API's are working >> App ----> Requests -------> Server's Database -------> 
 Web Services ?
 Web services are the s/w package that is used for communicating between two devices.
 
+
+1. Get bookings 
+2. Get booking id detail
+3. Create Booking "Post"
+4. Generate Token "Post"
+5. 
