@@ -1,1 +1,11 @@
 2. WorkFlow & CRUD operations 
+
+Q.1. Collection ?
+In a Postman Collection, the requests are executed in the order in which they appear. Every request is run first by the order of the folder followed by any request at the Collection root.
+
+Q.2. Create Collection ?
+
+Q.3 Can we change the order of excution ?
+If we want to change the order of the request to be executed (for example, first the Get Request shall run, followed by Create User, then Update Request and finally the Delete Request). 
+We have to take the help of the function postman.setNextRequest().
+
