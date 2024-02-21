@@ -44,7 +44,7 @@ Accessing user data with OAuth 1.0 involves a few requests back and forth betwee
 OAuth 2.0 : With OAuth 2.0, you first retrieve an access token for the API, then use that token to authenticate future requests.
 
 
-Q.7. Difference between OAuth 1.0 & OAuth 2.0 ?
+Q.7. Difference between OAuth 1.0 & OAuth 2.0 ?  (OAUTH : FULL FORM --> Open Authorization)
 OAuth 1.0 only handled web workflows, but OAuth 2.0 considers non-web clients as well.
 
 OAuth client
