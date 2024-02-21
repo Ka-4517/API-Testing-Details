@@ -1,0 +1,54 @@
+Q.1 Environment Variable ?
+Environment variables are used to store app secrets and configuration data, which are retrieved by your running app when needed.
+In Postman, an environment consists of a key-value pair. It helps to identify each request separately. 
+As we create environments, we can modify key-value pairs and that will produce varied responses from the same request.
+The key in the key−value pair in the environment is known as the Environment variable.
+
+Q.2 Environment ?
+In short, an environment allows the execution of requests and collections in a varied data set. 
+We can create environments for production, testing and development. 
+Each of these environments will have different parameters like URL, password, and so on.
+
+
+Q.3 Create Environment ?
+Step 1 − Navigate to the New menu and then click on Environment.
+Step 2 − MANAGE ENVIRONMENTS pop-up gets opened. We have to enter the Environment name. Then, add a variable name and value.
+Step 3 − The new Environment (ENV1) gets reflected as one of the items in the No Environment dropdown.
+Step 4 − Select the ENV1 environment and enter {{u}} in the address bar. To utilise an Environment variable in a request, we have to enclose it with double curly braces ({{<Environment variable name>}}).
+Step 5 − Then, click on Send. This variable can be used instead of the actual URL. We have received the Response code 200 0K (meaning the request is successful).
+
+Q.4 Environment Variable scope ?
+The scope of an Environment variable is within the environment for which it is created. 
+This means it has a local scope confined to that environment. 
+If we select another environment, and try to access the same Environment variable, we shall get an error.
+
+
+Q.5 Authorization ?
+authorization is done to verify the eligibility of a user to access a resource in the server. 
+There could be multiple APIs in a project, but their access can be restricted only for certain authorized users.
+The process of authorization is applied for the APIs which are required to be secured. 
+This authorization is done for identification and to verify, if the user is entitled to access a server resource.
+
+Q.6. Types Of Authorization ?
+Bearer Token : Bearer tokens enable requests to authenticate using an access key, such as a JSON Web Token (JWT). The token is a text string, included in the request header. 
+
+Basic Auth : Basic authentication involves sending a verified username and password with your request. 
+
+API Key : With API key auth, you send a key-value pair to the API either in the request headers or query parameters. In the request Authorization tab, select API Key from the Type list. 
+Enter your key name and value, and select either Header or Query Params from the Add to dropdown list. You can store your values in variables for extra security.
+
+OAuth 1.o : OAuth 1.0 enables client applications to access data provided by a third-party API.
+For example, as a user of a service, you can grant another application access to your data with that service without exposing details like your username and password. 
+Accessing user data with OAuth 1.0 involves a few requests back and forth between client application, user, and service provider.
+
+OAuth 2.0 : With OAuth 2.0, you first retrieve an access token for the API, then use that token to authenticate future requests.
+
+
+Q.7. Difference between OAuth 1.0 & OAuth 2.0 ?
+OAuth 1.0 only handled web workflows, but OAuth 2.0 considers non-web clients as well.
+
+OAuth client
+A third-party application that wants access to the private resources of the resource owner. 
+The OAuth client can make protected resource requests on behalf of the resource owner after the resource owner grants it authorization. 
+OAuth 2.0 introduces two types of clients: confidential and public. Confidential clients are registered with a client secret, while public clients are not.
+
