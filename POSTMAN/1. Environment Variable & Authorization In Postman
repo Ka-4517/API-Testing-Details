@@ -57,3 +57,6 @@ The refresh token exists to enable authorization servers to use short lifetimes 
 Related: Refreshing Access Tokens (oauth.com) Refresh Tokens: What they are and when to use them (auth0.com)
 
 In OAuth 1.0, access tokens can be stored for a year or more. But in OAuth 2.0, access tokens can contain an expiration time, which improves the security and reduces the chances of illegal access.
+
+Q.9. What is the use of refresh token in JWT?
+Refresh token: The refresh token is used to generate a new access token. Typically, if the access token has an expiration date, once it expires, the user would have to authenticate again to obtain an access token.
