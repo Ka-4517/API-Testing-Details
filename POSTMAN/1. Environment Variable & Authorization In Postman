@@ -52,3 +52,7 @@ A third-party application that wants access to the private resources of the reso
 The OAuth client can make protected resource requests on behalf of the resource owner after the resource owner grants it authorization. 
 OAuth 2.0 introduces two types of clients: confidential and public. Confidential clients are registered with a client secret, while public clients are not.
 
+Q.8 Refresh Token ?
+The refresh token exists to enable authorization servers to use short lifetimes for access tokens without needing to involve the user when the token expires. 
+Related: Refreshing Access Tokens (oauth.com) Refresh Tokens: What they are and when to use them (auth0.com)
+
