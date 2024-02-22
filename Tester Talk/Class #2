@@ -27,3 +27,20 @@ How to set Token generated response in Update & delete Booking API ?
 3. Run this Api & Will set your environment variable 
 4. Goto Update Booking API & Set this Environment Variable in URL 
 5. Run this ! Updated succesfully !!
+
+
+How to Set Assertionn to validate Status Code ?
+1. Goto Create Booking API 
+2. Goto Test section and Paste This -->                       *****pm.test("Verify that Status code is 200", function () {
+                                                                    pm.response.to.have.status(200);   });
+
+How will you set assertion that You created a booking & and you need to validate that this text & Headers & Response Time should be there in result.
+1. Goto Create Booking API 
+2. Goto Test section 
+3. Paste this -->                                          ****pm.test("Body matches string", function () {
+                                                           pm.expect(pm.response.text()).to.include("Testers");});
+4. Paste This -->                        *****pm.test("Verify Response Header - Content-Type is present", function () {
+                                              pm.response.to.have.header("Content-Type", "application/json; charset=utf-8");});
+5. Paste this -->         *****pm.test("Response time is less than 200ms", function () {
+                               pm.expect(pm.response.responseTime).to.be.below(200);});
+
