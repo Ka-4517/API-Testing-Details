@@ -12,3 +12,7 @@
 ![image](https://github.com/Ka-4517/API-Testing-Details/assets/72380607/f23884de-1a0b-4565-b022-48249f7e629d)
 
 
+file:///X:/2024%20Learnings/Postman/newman/A1%20Tester%20Talk%20-%20Booking%20API-2024-02-22-13-16-51-726-0.html
+
+file:///X:/2024%20Learnings/Postman/newman/newman-run-report-2024-02-22-13-05-28-064-0.html
+
