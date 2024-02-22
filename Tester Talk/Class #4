@@ -1,0 +1,20 @@
+How Install Newman ?
+1. Download Node.js 
+2. Open cmd & Print this >> npm install -g newman
+3. Check versions >> npm --version & node --version
+
+
+How to execute Collection from Cmd ?
+1. cd path of the exported files >> cd X:\2024 Learnings\Postman
+2. C: { show error not in directory  } Type this to go to another directory X:
+3. After this > cd X:\2024 Learnings\Postman
+4. newman run CollectionName -e Environment Variable File name-> 
+5. Like this >>> newman run A1 Tester Talk - Booking API.postman_collection.json -e Testers Talk.postman_environment.json
+6. This will throw error you need to save file names without spaces 
+7. Like This >>>>>>> newman run Booking_API.json -e environment.json
+8. 
+
+How to generate Standard html Report ?
+
+How to generate Advanced html report ?
+
