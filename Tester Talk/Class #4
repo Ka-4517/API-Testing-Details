@@ -25,6 +25,7 @@ Report Generated on That Folder !!!!!
 
 How to generate Advanced html report ?
 npm install -g newman-reporter-htmlextra
+>newman run Booking_API.json -e environment.json --reporters=cli,htmlextra
 
 
 
