@@ -12,9 +12,37 @@ How to execute Collection from Cmd ?
 5. Like this >>> newman run A1 Tester Talk - Booking API.postman_collection.json -e Testers Talk.postman_environment.json
 6. This will throw error you need to save file names without spaces 
 7. Like This >>>>>>> newman run Booking_API.json -e environment.json
-8. 
+8. Execeuted !!!!!
 
 How to generate Standard html Report ?
+npm i -g newman-reporter-html
+After getting this executed this will take time 
+Run these lines one by one >
+newman run Booking_API.json -e environment.json
+newman run Booking_API.json -e environment.json -r html
+Report Generated on That Folder !!!!!
+
 
 How to generate Advanced html report ?
+npm install -g newman-reporter-htmlextra
+
+
+
+Why we use newman?
+Newman is a command-line Collection Runner for Postman. It enables you to run and test a Postman Collection directly from the command line.
+Automated Testing: Newman enables you to automate the testing of your APIs by running Postman collections as part of your continuous integration (CI) pipeline or test automation framework. 
+This ensures that your APIs behave as expected across different environments and releases.
+
+Integration with CI/CD: You can integrate Newman into your CI/CD workflows to automatically test APIs after each code change or deployment. 
+This helps catch regressions early in the development process and ensures the stability of your applications.
+
+Headless Execution: Newman provides a headless mode for running collections without the need for a graphical interface. 
+This makes it suitable for running tests in headless environments such as servers or containers where a graphical interface is not available.
+
+Command-Line Interface: With Newman's command-line interface, you can easily execute Postman collections from the terminal or command prompt, making it convenient for scripting and automation tasks.
+
+Environment Management: Newman allows you to specify different environments for running your collections, making it easy to test your APIs against various configurations such as development, staging, and production.
+
+Reporting: Newman generates detailed test reports in various formats such as JSON and HTML, which provide insights into test results, including pass/fail status, response times, and more. These reports can be used for analysis and documentation purposes.
+
 
