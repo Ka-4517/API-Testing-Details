@@ -1,0 +1,29 @@
+Negative scenerios 
+1. Get Booking ID details with Invalid ID --> It should show 404 error message. Bcz that ID was not in the data base.
+2. Create Booking Using Invalid Charecters ---> It should show 400 error Bcz we entering wrong input.
+3. If you deleted Anyuser from data base --> You will get 201 created status code.
+4. If you Updated the Data of any user --> You will get get 200 Ok status cod e
+
+
+How To Set Environment Variable ?
+1. Add New Environment at Workspace level/ Collection level 
+2. Add variable name & Value 
+3. Now Use that variable in your Body content where ever you want 
+4. Select Environment From Top right corner 
+5. Now it successfully Set. !
+
+How to save Any Api Response in Environment Variable ?
+1. Go To Test section (under Create booking API)
+2. type this : 
+var jsonData = pm.response.json();
+pm.environment.set("booking_id",jsonData.bookingid);              ***enironment variable set !
+3. Now go to (get booking id detail) API 
+And paste the variable name in URL :                             ****https://restful-booker.herokuapp.com/booking/{{booking_id}}
+4. First run create booking api & the run get booking id detail 
+
+How to set Token generated response in Update & delete Booking API ?
+1. Goto Token Generator Api 
+2. Type this & Set Environment Variable
+3. Run this Api & Will set your environment variable 
+4. Goto Update Booking API & Set this Environment Variable in URL 
+5. Run this ! Updated succesfully !!
