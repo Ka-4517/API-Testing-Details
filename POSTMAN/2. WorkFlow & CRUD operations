@@ -9,3 +9,7 @@ Q.3 Can we change the order of excution ?
 If we want to change the order of the request to be executed (for example, first the Get Request shall run, followed by Create User, then Update Request and finally the Delete Request). 
 We have to take the help of the function postman.setNextRequest().
 
+If You want to run Infinite 
+postman.setNextRequest(null)
+
+
