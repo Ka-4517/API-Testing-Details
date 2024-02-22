@@ -1,0 +1,72 @@
+Q.1. How to assert Json key values ? Json Value Check snipet 
+pm.test("Your First name", function () {
+    var jsonData = pm.response.json();
+    pm.expect(jsonData.firstname).to.eql("Testers");
+});
+
+You can also assign variable out of the method helpfull in reusing the code 
+var jsonData = pm.response.json();
+pm.test("Your First name", function () {
+    pm.expect(jsonData.firstname).to.eql("Testers");
+});
+pm.test("Your TotalPrice", function () {
+    pm.expect(jsonData.totalprice).to.eql(100000);
+});
+
+
+
+Q.2. How to work with Json Nested objects ?
+{
+    "firstname": "Testers",
+    "lastname": "Tester Updated resonse set",
+    "totalprice": 100000,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2018-01-01",     <<<<<< you need to access this using script known as nested json object.
+        "checkout": "2019-01-01"
+    },
+    "additionalneeds": "super bowls"
+}
+Solution : 
+pm.test("Your Booking dates ", function () {
+pm.expect(jsonData.bookingdates.checkin).to.eql("2018-01-01");
+});
+
+
+Q.3. How to Import any Curl Commend?
+1. Click on Import Button Top Left 
+2. Simply Paste the RawText or Paste the File here 
+Raw Curl Text is Like This :
+curl -X POST \
+  https://restful-booker.herokuapp.com/booking \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "firstname" : "Jim",
+    "lastname" : "Brown",
+    "totalprice" : 111,
+    "depositpaid" : true,
+    "bookingdates" : {
+        "checkin" : "2018-01-01",
+        "checkout" : "2019-01-01"
+    },
+    "additionalneeds" : "Breakfast"
+}'
+
+
+Q.4. How To Run Collection ?
+1. Select Collection & Click three Dots 
+2. Select Run collection 
+
+
+Q.5. How To Run Collection folder only ?
+1. Select Collection folder & Click three Dots 
+2. Select Run folder 
+
+
+Q.6. How to export colletion & environments ?
+1. Goto collection & Section Export 
+2. Save collection with extension .json file 
+3. After that goto your environment variable & Click to edit 
+4. Click to Three dots & Click on Export 
+
+
