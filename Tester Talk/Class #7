@@ -1,0 +1,9 @@
+Data Driven Testing Using CSV file.
+
+Note : In My Case First it not accept the csv file bcz the type is not csv / I am not selected at the time of saving. 
+After selecting file type and then Run will accept the csv data.
+
+1. Create csv file 
+2. While saving make sure to select the File Type 
+3. Same method Rum collection 
+4. Select this csv file & Run Collection as per your need.
