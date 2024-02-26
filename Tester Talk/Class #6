@@ -1,0 +1,25 @@
+Data driven testing using Json file.
+
+Q.1. Scenerio : Using data driven method you need to create Bookings. 
+Answer : 1. Create Json data file having this text 
+              [
+	{
+	  "fname":"postman",
+		"lname":"tutorial"
+
+	},
+	{
+		"fname":"API postman",
+		"lname":"tutorial"
+	},
+	{
+		"fname":"Jenkins postman",
+		"lname":"tutorial"
+	},
+              ]
+2. Go To collection & Select Three dot 
+3. Click to Run collect 
+4. Don't run all API only run Create Bookings so uncheck other API boxes
+https://imghostr.com/336401_9m7 <<
+5. Click to Select Data File (Select you created Json file ) & Fill No. of iterations
+6. 
