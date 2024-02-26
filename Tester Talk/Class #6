@@ -22,4 +22,18 @@ Answer : 1. Create Json data file having this text
 4. Don't run all API only run Create Bookings so uncheck other API boxes
 https://imghostr.com/336401_9m7 <<
 5. Click to Select Data File (Select you created Json file ) & Fill No. of iterations
-6. 
+6. Run the collection / You can check in the passed section all the requested results passed using Data driven method or not.
+
+Q.2. Verify the responses of data driven ?
+1. In Test Section Paste this code :
+var fname = pm.variables.get("fname"); // Use to read the json data 
+var jsonData = pm.response.json();  // Use to read the current API response
+pm.test("Verify First name data is equal to the output data", function(){
+    pm.expect(jsonData.booking.firstname).to.eql(fname);
+})
+2. Run the Create Booking From Run collectiion 
+3. https://imghostr.com/23fcd7_xur 
+
+
+
+
