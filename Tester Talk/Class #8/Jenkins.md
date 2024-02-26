@@ -35,6 +35,10 @@ Note : We will using Long Term Support.
 
        3. Create Admin User & Password >>
        ![image](https://github.com/Ka-4517/API-Testing-Details/assets/72380607/714a00c5-3b4e-48cd-ae7d-2a153c42d24d)
+       User id : admin123
+       password : admin
+       Full Name : Karan Gupta
+       email : karangupta4517@gmail.com
        
 
        4. Click on Save & continue >>
