@@ -67,8 +67,10 @@ Q.2. How to Run postman collection from jenkins ?
 
 -How to solve this issue ?  >> ![image](https://github.com/Ka-4517/API-Testing-Details/assets/72380607/9147bbde-9f49-4195-b550-140e3105f858)
 ANS: Now go to that bat file and change the text with this : 
-newman run --disable-unicode C:\Users\Karan\Desktop\Postman\BookingAPI\Booking_API.json -e C:\Users\Karan\Desktop\Postman\BookingAPI\environment.json
-If this is not work then : do these :-
+newman run --disable-unicode C:\Users\Karan\Desktop\Postman\BookingAPI\Booking_API.json -e C:\Users\Karan\Desktop\Postman\BookingAPI\environment.json (For me this is not working)
+
+
+If You have exe jankins then / this is not work then : do these :-
 1. Go to your Jenkins installation directory and open the Jenkins XML file.
 2. Add the highlighted text(-Dfile.encoding=UTF-8) ![image](https://github.com/Ka-4517/API-Testing-Details/assets/72380607/4a02df29-0d28-4085-b1eb-cddf843bc024)
  and save.
