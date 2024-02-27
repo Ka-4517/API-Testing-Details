@@ -65,6 +65,9 @@ Q.2. How to Run postman collection from jenkins ?
 - New Item >>. select Freestyle project >> Ok >> Give path in build setup of the bat file
 - Generate build 
 
+How to solve this issue ?
+Now go to that bat file and change the text with this : 
+newman run --disable-unicode C:\Users\Karan\Desktop\Postman\BookingAPI\Booking_API.json -e C:\Users\Karan\Desktop\Postman\BookingAPI\environment.json
 
 Q.3. How to set CRON pattern?
 
