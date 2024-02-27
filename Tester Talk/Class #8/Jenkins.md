@@ -60,6 +60,7 @@ Note : We will using Long Term Support.
 
 
 Q.2. How to Run postman collection from jenkins ?
+- Bat File having this code & need to add this in jenkins build set : newman run Booking_API.json -e environment.json
 
 
 Q.3. How to set CRON pattern?
