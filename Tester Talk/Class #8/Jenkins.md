@@ -65,9 +65,16 @@ Q.2. How to Run postman collection from jenkins ?
 - New Item >>. select Freestyle project >> Ok >> Give path in build setup of the bat file
 - Generate build 
 
-How to solve this issue ?
-Now go to that bat file and change the text with this : 
+-How to solve this issue ?  >> ![image](https://github.com/Ka-4517/API-Testing-Details/assets/72380607/9147bbde-9f49-4195-b550-140e3105f858)
+ANS: Now go to that bat file and change the text with this : 
 newman run --disable-unicode C:\Users\Karan\Desktop\Postman\BookingAPI\Booking_API.json -e C:\Users\Karan\Desktop\Postman\BookingAPI\environment.json
+If this is not work then : do these :-
+1. Go to your Jenkins installation directory and open the Jenkins XML file.
+2. Add the highlighted text(-Dfile.encoding=UTF-8) ![image](https://github.com/Ka-4517/API-Testing-Details/assets/72380607/4a02df29-0d28-4085-b1eb-cddf843bc024)
+ and save.
+3. Open Command Prompt -->Go to your Jenkins installation directory and enter the command to stop Jenkins :- jenkins.exe stop
+4. Restart jenkins by entering the command at the command prompt:- jenkins.exe restart
+5. Re-run build in jenkins and check the console output. https://prnt.sc/zoi3BmOAcKQ5
 
 Q.3. How to set CRON pattern?
 
