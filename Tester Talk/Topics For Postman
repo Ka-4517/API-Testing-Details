@@ -1,0 +1,58 @@
+>>>>>>>>  This Tutorial Should Revise Before Interview : https://learning.postman.com/docs/collaborating-in-postman/private-api-network/organizing-private-network/  <<<<<<<< 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1. Introduction : 
+Overview
+Resources
+Feedback
+Troubleshooting << 
+
+2. Send requests
+Create requests - Done 
+Authentication and authorization - Done  (Authenticate with AWS Signature authentication workflow in Postman)
+Response data and cookies - Done (Cookies)
+Variables and environments - Done 
+Capture API traffic - Pending <
+SOAP - Pending <
+
+3. Write scripts
+Write pre-requests scripts
+Write tests - DONE 
+Run tests with monitors
+Scripting reference
+Script examples
+Dynamic variables
+Postman JavaScript reference
+Write Test Script - Done 
+Assertions - Done 
+Data Driven API Testing Using csv & json file - Done 
+(Environment variables concept) - Done
+Chaining Method - Done 
+
+4. Run collection - Done 
+Automate Collection - Pending <
+Trigger collection runs using webhooks - Pending <
+Customize request order in a collection run - Pending <
+Run collections using imported data - Done (Data Driven) 
+
+5. API Performance 
+Simulate user traffic to test your API performance - Pending <
+
+6. Newman CLI : 
+Run and test collections with Newman CLI - Done
+Install and run Newman - Done
+Newman command reference - Done
+Upload files with Newman - Pending 
+Use Newman built-in reporters - Pending 
+Use Newman external and custom reporters - Pending 
+Newman with Docker - Pending
+CI with Newman - Pending 
+Travis CI with Newman - Pending
+Jenkins with Newman - Pending
+
+
+
+Develop APIs with Postman Flows - Pending 
+Postman CLI - Pending 
+Documentation Preparation needed - From Another Site - Pending 
+
