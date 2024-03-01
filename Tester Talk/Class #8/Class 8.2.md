@@ -18,3 +18,7 @@ It is commonly used to automate system maintenance or administration.
 3. 
 
 Q.4. How to generate newman advance html report in Jenkins?
+1. create bat file : newman run X:\2024-Learnings\Postman\Booking_API.json -e X:\2024-Learnings\Postman\environment.json --reporters=cli,htmlextra
+2. run this with jenkins
+3. now in jenkins go to
+4. ![image](https://github.com/Ka-4517/API-Testing-Details/assets/72380607/f7651582-decc-40fe-b332-09a38063a89c)
