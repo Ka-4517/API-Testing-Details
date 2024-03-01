@@ -72,6 +72,12 @@ newman run --disable-unicode C:\Users\Karan\Desktop\Postman\BookingAPI\Booking_A
 "
 output_with_color = "[90m┌─────────────────────────[39m[90m┬────────────────────[39m[90m┬────────────────────┐[39m"
 output_without_color = remove_ansi_escape_sequences(output_with_color)
+Just do this 
+![image](https://github.com/Ka-4517/API-Testing-Details/assets/72380607/97d04e5b-00c2-4aae-90a0-71e60e257fae)
+
+![image](https://github.com/Ka-4517/API-Testing-Details/assets/72380607/a5aa294b-faa9-4fc8-94b1-f40f278d6422)
+
+
 "
 
 If You have exe jankins then / this is not work then : do these :- C:\Users\Karan\.jenkins (For me this is not working)
