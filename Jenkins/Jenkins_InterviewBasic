@@ -1,0 +1,22 @@
+Q1. How do you explain Jenkins in interview?
+Jenkins is a free and open-source automation tool that is used for continuous integration. 
+It is used to continually create and test software projects, allowing developers and DevOps engineers to easily make changes to the project and provide a new build for users.
+
+Q2. How would you describe Jenkins pipeline in interview?
+Jenkins pipeline is a collection of events or jobs which are interlinked with one another in a  pre-defined sequence. It is a set of plugins which supports implementing and adding continuous delivery pipelines into Jenkins.
+
+Q4. What is CI and CD in Jenkins interview questions?
+CI/CD (Continuous Integration/Continuous Deployment) pipeline is an automated process in software development. It involves integrating code changes frequently, running automated tests, and deploying code to production quickly and consistently.
+
+
+Q5. Which are Jenkins job types?
+Jenkins provides different types of jobs (or projects). Some of them are:
+Pipeline.
+Multibranch Pipeline.
+Organization folders.
+Freestyle.
+Multi-configuration (matrix)
+Maven.
+External job
+
+
