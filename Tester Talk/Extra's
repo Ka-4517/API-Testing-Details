@@ -12,4 +12,42 @@ if (value == undefined || value == null || value.length == 0) {
     throw new Error('No "X" set!')
 }
 
+Q.2.  Scenerio : Get data who have name started with "A" only.
+// Define the starting letter
+const startingLetter = 'A';
+
+// Modify the request URL parameters to filter data based on the starting letter
+const queryParams = {
+    name: '^' + startingLetter, // Regular expression to match names starting with 'A'
+    // Add any other parameters if needed
+};
+
+// Update the request URL with the modified parameters
+const url = new URL(pm.request.url.toString());
+url.search = new URLSearchParams(queryParams);
+
+// Set the updated URL back to the request
+pm.request.url = url.toString();
+
+
+Q.3. Define a function to filter the data based on the bookingid starting with '1'
+function filterDataWithA(data) {
+    return data.filter(entry => {
+        const bookingid = entry.bookingid.toString();
+        return bookingid.startsWith('1');
+    });
+}
+
+// Parse the response body as JSON
+const responseData = pm.response.json();
+
+// Filter the data
+const filteredData = filterDataWithA(responseData);
+
+// Update the request body with the filtered data
+pm.request.body.update(JSON.stringify(filteredData));
+
+
+
+
 
