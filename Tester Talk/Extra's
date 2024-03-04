@@ -1,1 +1,15 @@
+Q.1.  Is it possible to stop a postman call from being executed based on conditions detected in pre-requisite scripts?
+if (!environment['X']) {
+    throw new Error('No "X" set')
+}
+This prevents the REST call from going through. But in the collection runner mode it stops the entire test suite.
+
+or 
+
+var value = pm.environment.get('X')
+
+if (value == undefined || value == null || value.length == 0) {
+    throw new Error('No "X" set!')
+}
+
 
